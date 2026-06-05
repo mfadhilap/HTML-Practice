@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aria demo</title>
+    <style>
+      .skip-link {
+        opacity: 0;
+      }
+      .skip-link:focus {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <main id="main-content">
+      <h1>Aria Demo</h1>
+      <div role="search">
+        <label for="inp-search">Search</label>
+        <input type="search" id="inp-search" />
+      </div>
+      <button aria-label="Close menu">X</button><br><br>
+      <button aria-expanded="false" aria-controls="menu-id">Toggle</button>
+      <div id="menu-id">this is the menu</div>
+      <div role="alert" aria-live="polite">Notification Div</div>
+      <form action="" method="get">
+        <label for="inp-name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="inp-name"
+          aria-required="true"
+          aria-describedby="para1"
+        />
+        <p id="para1">This is to enter name</p>
+        <label for="inp-mail">email</label>
+        <input
+          type="email"
+          name="email"
+          id="inp-mail"
+          aria-required="true"
+          aria-describedby="para2"
+        />
+        <p id="para2">this is to enter email</p>
+        <label for="inp-number">Phone number</label>
+        <input
+          type="number"
+          name="phoneno"
+          id="inp-number"
+          aria-required="true"
+          aria-describedby="para3"
+        />
+        <p id="para3">this is to enter phone number</p>
+      </form>
+    </main>
+  </body>
+</html>
