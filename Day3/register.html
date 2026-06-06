@@ -11,16 +11,16 @@
       <form>
         <fieldset>
           <legend>Personal Details</legend>
-          <label for="name-id">Enter Name</label>
+          <label for="name-id">Enter Name *</label>
           <input type="text" id="name-id" required /><br /><br />
-          <label for="email-id">Enter Email</label>
+          <label for="email-id">Enter Email *</label>
           <input type="email" id="email-id" required /><br /><br />
-          <label for="tel-id">Enter Phone No</label>
+          <label for="tel-id">Enter Phone No *</label>
           <input type="tel" id="tel-id" required />
         </fieldset>
         <fieldset>
           <legend>Account</legend>
-          <label for="username-id">Enter Username</label>
+          <label for="username-id">Enter Username *</label>
           <input
             type="text"
             id="username-id"
@@ -29,19 +29,19 @@
             minlength="8"
             maxlength="20"
           /><br /><br />
-          <label for="pass-id">Enter Password</label>
+          <label for="pass-id">Enter Password *</label>
           <input type="password" id="pass-id" required minlength="8" maxlength="20" /><br /><br />
-          <label for="confirm-pass-id">Confirm Password</label>
+          <label for="confirm-pass-id">Confirm Password *</label>
           <input type="password" id="confirm-pass-id" required minlength="8" maxlength="20" />
         </fieldset>
         <br />
-        <label for="dob-id">Enter Date of Birth</label>
+        <label for="dob-id">Enter Date of Birth *</label>
         <input type="date" id="dob-id" required /><br /><br />
-        <label for="age">Enter your Age</label>
+        <label for="age">Enter your Age *</label>
         <input type="number" name="age" id="age" /><br /><br />
-        <label for="graduation">Enter Graduatuion End Date</label>
+        <label for="graduation">Enter Graduatuion End Date *</label>
         <input type="month" name="graduation" id="graduation" required /><br /><br />
-        <label for="job-title-id">Select Job Title:</label>
+        <label for="job-title-id">Select Job Title: *</label>
         <input list="job-titles" id="job-title-id" name="job-title" required />
 
         <datalist id="job-titles">
@@ -81,19 +81,19 @@
           <label for="python">Python</label>
         </fieldset>
         <br />
-        <label for="resume-id">Upload your Resume</label>
+        <label for="resume-id">Upload your Resume *</label>
         <input type="file" name="resume-id" id="resume-id" required /><br /><br />
         <label for="url-id">Enter your Portfolio URL</label>
         <input type="url" name="url-id" id="url-id" /><br /><br />
 
-        <label for="interview-time">Choose a date and time for your Interview :</label>
+        <label for="interview-time">Choose a date and time for your Interview : *</label>
         <input
           type="datetime-local"
           name="interview-time"
           id="interview-time"
           required
         /><br /><br />
-        <label for="week-id">Which week would you like to start? :</label>
+        <label for="week-id">Which week would you like to start? : *</label>
         <input type="week" name="week" id="week-id" min="2026-W32" max="2026-W52" required />
       </form>
     </main>
