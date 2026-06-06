@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+  </head>
+  <body>
+    <main>
+      <h1>User Sign-In</h1>
+      <form >
+        <label for="mailid"> Enter Email </label>
+        <input type="email" id="mailid" autocomplete="email" /><br /><br />
+        <label for="passwd">Enter Password</label>
+        <input
+          aria-describedby="#pass-id"
+          type="password"
+          id="passwd"
+          autocomplete="current-password"
+        />
+        <button aria-pressed="false">show/hide Password</button>
+        <p id="pass-id">Must be at least 8​ c​haracters</p>
+        <label for="remember">Remember Me</label>
+        <input type="checkbox" id="remember" /><br /><br />
+        <input type="submit" />
+      </form>
+    </main>
+  </body>
+</html>
