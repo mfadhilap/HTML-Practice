@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi Section Application Form</title>
+  </head>
+  <body>
+    <main>
+        <h1>Application Form</h1>
+        <ol>
+            <li aria-current="step">Step 1</li>
+            <li>Step 2</li>
+            <li>Step 2</li>
+        </ol>
+      <form>
+        <fieldset>
+          <legend>Step 1: Personal Information</legend>
+          <label for="name-id">Enter Name</label>
+          <input type="text" id="name-id" required /><br /><br />
+          <label for="email-id">Enter Email</label>
+          <input type="email" id="email-id" name="mail" required /><br /><br />
+          <label for="tel-id">Enter Phone No</label>
+          <input type="tel" id="tel-id" required /><br /><br />
+          <label for="linkedinurl-id">Enter your LinkedIn URL</label>
+          <input type="url" name="linkedinurl" id="linkedinurl-id" /><br /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Step 2 : Work Experience</legend>
+          <label for="role-id">Enter Current Role</label>
+          <input type="text" id="role-id" required /><br /><br />
+          <label for="company-id">Enter Current Company</label>
+          <input type="text" id="company-id" required /><br /><br />
+          <label for="exp-id">Enter Years of Experience</label>
+          <input type="number" name="exp" id="exp-id" required /><br /><br />
+          <label for="achievements">Enter Key Achievements</label>
+          <textarea name="achievements" id="achievements"></textarea>
+          <p>Max 500 characters</p>
+        </fieldset>
+        <fieldset>
+          <legend>Step 3: Documents</legend>
+          <label for="cv-id">Upload your CV</label>
+          <input type="file" name="cv-id" id="cv-id" required accept='.pdf,.docx' /><br /><br />
+          <label for="coverletter-id">Upload your Cover Letter</label>
+          <input type="file" name="coverletter" id="coverletter-id" required /><br /><br />
+          <label for="url-id">Enter your Portfolio URL</label>
+          <input type="url" name="url-id" id="url-id" /><br /><br />
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
