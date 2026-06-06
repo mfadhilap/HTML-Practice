@@ -8,13 +8,13 @@
   <body>
     <main>
       <h1>Registration Form</h1>
-      <form >
+      <form>
         <fieldset>
           <legend>Personal Details</legend>
           <label for="name-id">Enter Name</label>
-          <input type="text" name="" id="name-id" required /><br /><br />
+          <input type="text" id="name-id" required /><br /><br />
           <label for="email-id">Enter Email</label>
-          <input type="email" name="" id="email-id" required /><br /><br />
+          <input type="email" id="email-id" required /><br /><br />
           <label for="tel-id">Enter Phone No</label>
           <input type="tel" id="tel-id" required />
         </fieldset>
@@ -23,19 +23,20 @@
           <label for="username-id">Enter Username</label>
           <input
             type="text"
-            name=""
             id="username-id"
             pattern="[A-Za-z0-9_]{3,20}"
             required
+            minlength="8"
+            maxlength="20"
           /><br /><br />
           <label for="pass-id">Enter Password</label>
-          <input type="password" name="" id="pass-id" required /><br /><br />
+          <input type="password" id="pass-id" required minlength="8" maxlength="20" /><br /><br />
           <label for="confirm-pass-id">Confirm Password</label>
-          <input type="password" name="" id="confirm-pass-id" required />
+          <input type="password" id="confirm-pass-id" required minlength="8" maxlength="20" />
         </fieldset>
         <br />
         <label for="dob-id">Enter Date of Birth</label>
-        <input type="date" name="" id="dob-id" required /><br /><br />
+        <input type="date" id="dob-id" required /><br /><br />
         <label for="age">Enter your Age</label>
         <input type="number" name="age" id="age" /><br /><br />
         <label for="graduation">Enter Graduatuion End Date</label>
@@ -66,17 +67,17 @@
           </fieldset>
           <br />
           <label for="profile-color">Pick a Color for profile</label>
-          <input type="color" name="" id="profile-color" value="#e67665" /><br /><br />
+          <input type="color" id="profile-color" value="#e67665" /><br /><br />
           <label for="skill-level">Choose your Skill Level</label>
-          <input type="range" name="" id="skill-level" min="0" max="10" value="7" />
+          <input type="range" id="skill-level" min="0" max="10" value="7" />
         </fieldset>
         <br />
 
         <fieldset>
           <legend>Choose Your Language(s)</legend>
-          <input type="checkbox" name="" id="javascript" />
+          <input type="checkbox" id="javascript" />
           <label for="javascript">JavaScript</label><br /><br />
-          <input type="checkbox" name="" id="python" />
+          <input type="checkbox" id="python" />
           <label for="python">Python</label>
         </fieldset>
         <br />
