@@ -8,9 +8,9 @@
   <body>
     <main>
       <form>
-        <label for="email-id">Enter Email</label>
+        <label for="email-id">Enter Email *</label>
         <input type="email" name="email" id="email-id" required /><br /><br />
-        <label for="pass-id">Enter Password</label>
+        <label for="pass-id">Enter Password *</label>
         <input
           type="password"
           id="pass-id"
@@ -20,10 +20,10 @@
           maxlength="20"
         /><br /><br />
         <label for="url-id">Enter your website URL</label>
-        <label for="age">Enter your Age</label>
-        <input type="number" name="age" id="age" min="18" max="99"/><br /><br />
         <input type="url" name="url-id" id="url-id" /><br /><br />
-        <label for="dob-id">Enter Date of Birth</label>
+        <label for="age">Enter your Age *</label>
+        <input type="number" name="age" id="age" min="18" max="99" required/><br /><br />
+        <label for="dob-id">Enter Date of Birth *</label>
         <input type="date" id="dob-id" required max="2026-06-06" /><br /><br />
         <input type="submit" />
       </form>
