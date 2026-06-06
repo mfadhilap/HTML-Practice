@@ -16,35 +16,35 @@
       <form>
         <fieldset>
           <legend>Step 1: Personal Information</legend>
-          <label for="name-id">Enter Name</label>
+          <label for="name-id">Enter Name *</label>
           <input type="text" id="name-id" required /><br /><br />
-          <label for="email-id">Enter Email</label>
+          <label for="email-id">Enter Email *</label>
           <input type="email" id="email-id" name="mail" required /><br /><br />
-          <label for="tel-id">Enter Phone No</label>
+          <label for="tel-id">Enter Phone No *</label>
           <input type="tel" id="tel-id" required /><br /><br />
-          <label for="linkedinurl-id">Enter your LinkedIn URL</label>
+          <label for="linkedinurl-id">Enter your LinkedIn URL </label>
           <input type="url" name="linkedinurl" id="linkedinurl-id" /><br /><br />
         </fieldset>
 
         <fieldset>
           <legend>Step 2 : Work Experience</legend>
-          <label for="role-id">Enter Current Role</label>
+          <label for="role-id">Enter Current Role *</label>
           <input type="text" id="role-id" required /><br /><br />
-          <label for="company-id">Enter Current Company</label>
+          <label for="company-id">Enter Current Company *</label>
           <input type="text" id="company-id" required /><br /><br />
-          <label for="exp-id">Enter Years of Experience</label>
+          <label for="exp-id">Enter Years of Experience *</label>
           <input type="number" name="exp" id="exp-id" required /><br /><br />
-          <label for="achievements">Enter Key Achievements</label>
-          <textarea name="achievements" id="achievements"></textarea>
-          <p>Max 500 characters</p>
+          <label for="achievements">Enter Key Achievements *</label>
+          <textarea aria-labelledby="maxchars" name="achievements" id="achievements"></textarea>
+          <p id="maxchars">Max 500 characters</p>
         </fieldset>
         <fieldset>
           <legend>Step 3: Documents</legend>
-          <label for="cv-id">Upload your CV</label>
+          <label for="cv-id">Upload your CV *</label>
           <input type="file" name="cv-id" id="cv-id" required accept='.pdf,.docx' /><br /><br />
-          <label for="coverletter-id">Upload your Cover Letter</label>
+          <label for="coverletter-id">Upload your Cover Letter *</label>
           <input type="file" name="coverletter" id="coverletter-id" required /><br /><br />
-          <label for="url-id">Enter your Portfolio URL</label>
+          <label for="url-id">Enter your Portfolio URL </label>
           <input type="url" name="url-id" id="url-id" /><br /><br />
         </fieldset>
       </form>
