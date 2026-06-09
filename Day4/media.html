@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page with Media</title>
+  </head>
+  <body>
+    <main>
+      <h1>Video and Audio</h1>
+      <video controls width="640" poster="https://picsum.photos/id/1/640/300">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+        <track src="vid.vtt" kind="captions" srclang="en" label="English" />
+        Your browser does not support this video.
+      </video>
+      <br /><br />
+      <details>
+        <summary>Details</summary>
+        This is a video from w3Schools
+      </details>
+      <br /><br />
+      <audio controls>
+        <source
+          src="https://commondatastorage.googleapis.com/codeskulptor-assets/jump.ogg"
+          type="audio/ogg"
+        />
+        <source
+          src="https://codeskulptor-demos.commondatastorage.googleapis.com/pang/arrow.mp3"
+          type="audio/mp3"
+        />
+        <p>
+          Your Browser does'nt support this audio tag <br />
+          Download the Audio from here
+          <a href="https://commondatastorage.googleapis.com/codeskulptor-assets/jump.ogg" download>
+            Download</a
+          >
+        </p></audio
+      ><br /><br />
+      <details>
+        <summary>Details</summary>
+        This is an audio from Codeskulptor
+      </details>
+    </main>
+  </body>
+</html>
