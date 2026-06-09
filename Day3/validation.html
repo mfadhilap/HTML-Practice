@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <form>
+        <label for="email-id">Enter Email *</label>
+        <input type="email" name="email" id="email-id" required /><br /><br />
+        <label for="pass-id">Enter Password *</label>
+        <input
+          type="password"
+          id="pass-id"
+          pattern=".*[0-9].*"
+          required
+          minlength="8"
+          maxlength="20"
+        /><br /><br />
+        <label for="url-id">Enter your website URL</label>
+        <input type="url" name="url-id" id="url-id" /><br /><br />
+        <label for="age">Enter your Age *</label>
+        <input type="number" name="age" id="age" min="18" max="99" required/><br /><br />
+        <label for="dob-id">Enter Date of Birth *</label>
+        <input type="date" id="dob-id" required max="2026-06-06" /><br /><br />
+        <input type="submit" />
+      </form>
+    </main>
+  </body>
+</html>
