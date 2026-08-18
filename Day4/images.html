@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+        <h1>Responsive Images</h1>
+      <img
+        loading="eager"
+        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        srcset="
+          https://picsum.photos/id/10/400   400w,
+          https://picsum.photos/id/10/800   800w,
+          https://picsum.photos/id/10/1200 1200w
+        "
+        alt="random image 1"
+      />
+      <br>
+      <br>
+      <img
+        loading="lazy"
+        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        srcset="
+          https://picsum.photos/id/11/400   400w,
+          https://picsum.photos/id/11/800   800w,
+          https://picsum.photos/id/11/1200 1200w
+        "
+        alt="random image 2"
+      />
+      <br><br>
+      <img
+        loading="lazy"
+        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        srcset="
+          https://picsum.photos/id/12/400   400w,
+          https://picsum.photos/id/12/800   800w,
+          https://picsum.photos/id/12/1200 1200w
+        "
+        alt="random image 3"
+      />
+      <br>
+      <br>
+      <img
+        loading="lazy"
+        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        srcset="
+          https://picsum.photos/id/13/400   400w,
+          https://picsum.photos/id/13/800   800w,
+          https://picsum.photos/id/13/1200 1200w
+        "
+        alt="random image 4"
+      />
+      <br>
+      <br>
+      <img
+        loading="lazy"
+        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        srcset="
+          https://picsum.photos/id/14/400   400w,
+          https://picsum.photos/id/14/800   800w,
+          https://picsum.photos/id/14/1200 1200w
+        "
+        alt="random image 5"
+      />
+      <br>
+      <br>
+      <img
+        loading="lazy"
+        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        srcset="
+          https://picsum.photos/id/15/400   400w,
+          https://picsum.photos/id/15/800   800w,
+          https://picsum.photos/id/15/1200 1200w
+        "
+        alt="random image 6"
+      />
+      <br>
+      <br>
+      <img
+        loading="lazy"
+        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        srcset="
+          https://picsum.photos/id/16/400   400w,
+          https://picsum.photos/id/16/800   800w,
+          https://picsum.photos/id/16/1200 1200w
+        "
+        alt="random image 7"
+      />
+      <br>
+      <br>
+      <img
+        loading="lazy"
+        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        srcset="
+          https://picsum.photos/id/17/400   400w,
+          https://picsum.photos/id/17/800   800w,
+          https://picsum.photos/id/17/1200 1200w
+        "
+        alt="random image 8"
+      />
+      <br>
+      <br>
+      <picture>
+        <source media="(width<800px)" srcset="https://picsum.photos/id/18/300" />
+        <source media="(width>=800px)" srcset="https://picsum.photos/id/18/900/400" />
+        <img src="https://picsum.photos/id/25/800" alt="Image of leaf" />
+      </picture>
+      <picture>
+        <source media="(width<800px)" srcset="https://picsum.photos/id/19/300" />
+        <source media="(width>=800px)" srcset="https://picsum.photos/id/19/900/400" />
+        <img src="https://picsum.photos/id/27/800" alt="Image of nature" />
+      </picture>
+    </main>
+  </body>
+</html>
