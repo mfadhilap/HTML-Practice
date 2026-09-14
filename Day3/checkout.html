@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Page</title>
+  </head>
+  <body>
+    <main>
+      <h1>Payment Checkout</h1>
+      <form>
+        <fieldset>
+          <legend>Fields marked * are required</legend>
+          <fieldset>
+            <legend>Delivery Address</legend>
+            <label for="name-id">Enter Full Name *</label>
+            <input type="text" id="name-id" required /><br /><br />
+            <label for="address1-id">Enter Address Line 1 *</label>
+            <input type="text" id="address1-id" required /><br /><br />
+            <label for="address2-id">Enter Address Line 2</label>
+            <input type="text" id="address2-id" /><br /><br />
+            <label for="city-id">Enter City *</label>
+            <input type="text" id="city-id" name="city" required /><br /><br />
+            <label for="post-id">Enter Post Code *</label>
+            <input
+              type="number"
+              id="post-id"
+              name="postcode"
+              required
+            /><br /><br />
+            <label for="country">Choose a country *</label>
+            <input list="country-list" id="country" name="country" />
+
+            <datalist id="country-list">
+              <option value="Uganda"></option>
+              <option value="Brazil"></option>
+              <option value="Ghana"></option>
+              <option value="Cuba"></option>
+              <option value="Egypt"></option>
+              <option value="Capde Verde"></option>
+              <option value="Germany"></option>
+              <option value="India"></option>
+              <option value="Japan"></option>
+              <option value="Luxembourg"></option>
+              <option value="Netherlands"></option>
+              <option value="Senegal"></option>
+              <option value="Nigeria"></option>
+              <option value="Romania"></option>
+              <option value="South Africa"></option>
+              <option value="South Korea"></option>
+              <option value="Spain"></option>
+              <option value="UK"></option>
+              <option value="USA"></option>
+              <option value="Bhutan"></option>
+            </datalist>
+          </fieldset>
+          <fieldset>
+            <legend>Payment Details</legend>
+            <label for="card-id">Enter Card Number *</label>
+            <input type="text" pattern="[0-9]{16}" id="card-id" required maxlength="16" /><br /><br />
+            <label for="expiry-id">Enter Expiry * </label>
+            <input type="month" id="expiry-id" required /><br /><br />
+            <label for="cvv-id">Enter CVV *</label>
+            <input
+              aria-describedby="cvv-details"
+              type="password"
+              id="cvv-id"
+              required
+              maxlength="4"
+            />
+            <p id="cvv-details">3 or 4 digits on the back​ ​of your card</p>
+          </fieldset>
+          <fieldset>
+            <legend>Order Notes</legend>
+
+            <label for="optional-id"> Type your Order Notes here : </label>
+            <textarea
+              name="optionaltext"
+              id="optional-id"
+              placeholder="(Optional)"
+              maxlength="500"
+            ></textarea>
+          </fieldset>
+          <input type="submit">
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
